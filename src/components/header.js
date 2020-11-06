@@ -10,7 +10,8 @@ const Header = () => {
   return(
   <header>
     <div className="headerContent">
-  <Link to="/home"><Image className="logo" /></Link>  
+   <Link to="/"><Image fileName="logo.png" alt="Header Logo" />
+</Link>  
   <h1> Çamurdan Atölye </h1>
  
   <ul>
