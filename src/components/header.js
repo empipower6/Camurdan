@@ -12,7 +12,7 @@ const Header = () => {
     <div className="headerContent">
    <Link to="/"><Image fileName="logo.png" alt="Header Logo" />
 </Link>  
-  <h1> Çamurdan Atölye </h1>
+  <h1> Atölye Çamurdan  </h1>
  
   <ul>
     <li><Link to="/products" activeClassName="active" className="menu-item">Products</Link></li>

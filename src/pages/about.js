@@ -36,7 +36,8 @@ class About extends React.Component {
       x: -200,
       duration:0.5
       });
-     
+
+    
   
    }
    render(){
