@@ -71,7 +71,6 @@ header h1{
 }
 
 header ul{
-    margin-left:5%;
     text-align:center;
     display:flex;
     flex-direction: row;
@@ -85,6 +84,12 @@ header ul li{
     color:black;
 }
 
+header ul .languageSwitch:hover{
+
+    cursor:pointer;
+
+}
+
 header ul .menu-item{
     color:black;
     text-decoration: none;
@@ -94,6 +99,11 @@ header ul .menu-item{
 header .headerContent{
     padding:2% 25%;
     text-align:center;
+}
+
+header .logo{
+   height:10vw;
+    width:auto;
 }
 
 .active{
@@ -121,14 +131,56 @@ header .headerContent{
 /* ************************************************************************* */
 
 
- footer{
-    margin-top:30vw;
-     background-color:#EDA0A0;
-     color:#496455;
-     height:20vw;
-     width:100%;
+    footer{
+        margin-top:30vw;
+        background-color:#496455;
+        color:white;
+        height:20vw;
+        width:100%;
+        display:grid;
+        grid-template-columns:20% 40% 40%;
 
- }
+    }
+
+    footer .footer-section-1{
+        margin-top:3vw;
+        height:10vw;
+        text-align:center;
+    }
+    footer .footer-section-2{
+        margin-top:3vw;
+    }
+    footer .footer-section-2 h1{
+    }
+    footer .footer-section-2 p{
+        font-size:1.4vw;
+        line-height:2vw;
+    }
+    footer .footer-section-3{
+        margin-top:11vw;
+        margin-right:2vw;
+        text-align:right;
+    }
+
+    footer .footer-section-3 .socialMedia{
+
+        font-size:2vw;
+        margin-bottom:1vw;
+    }
+    footer .footer-section-3 .socialMedia .instagram i, footer .footer-section-3 .socialMedia .facebook i{
+      
+       color:white;
+       transition:0.3s;
+    }
+    footer .footer-section-3 .socialMedia .instagram i:hover, footer .footer-section-3 .socialMedia .facebook i:hover{
+    
+      opacity:0.5;
+
+    }
+    footer .footer-section-3 .socialMedia .instagram i{
+        margin-right:2vw;
+    }
+
 
 
 
@@ -153,12 +205,36 @@ header .headerContent{
 /* ************************************************************************* */
 
 .about-section{
-  padding:10% 35%;
+  padding:10% 30%;
 }
+
+.about-section .about-text{
+
+    height:auto;
+    width:40vw;
+}
+
+.about-section .about-text .backgroundImage{
+    position:absolute;
+    top:20;
+    z-index:-1;
+    opacity:0.9;
+
+}
+.about-section .about-text p{
+    margin-left:1vw;
+    margin-top:-40vw;
+    color:#474747;
+    padding:7vw;
+}
+
 
 .about-people-section{
     padding:2vw;
 }
+
+
+
 
 .about-people-section .people-text{
   padding:1vw;
@@ -166,6 +242,15 @@ header .headerContent{
 .about-people-section .people-text .tugba {
     width:45%;
     text-align:right;
+}
+
+.about-people-section .people-text .tugba .tugbaBall{
+    position:absolute;
+    z-index:-1;
+    width:10vw;
+    height:10vw;
+    margin-top:-8vw;
+    opacity:0.3;
 }
 .about-people-section .people-text .tugba .bio{
 
@@ -187,6 +272,16 @@ header .headerContent{
     margin-top:-15%;
     float:right;
     width:42%;
+}
+
+.about-people-section .people-text .funda .fundaBall{
+    position:absolute;
+    z-index:-1;
+    width:10vw;
+    height:10vw;
+    margin-top:-6vw;
+    margin-left:18vw;
+    opacity:0.5;
 }
 
 .about-people-section .people-text .funda .bio{

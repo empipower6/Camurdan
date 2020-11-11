@@ -16,9 +16,19 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
    `gatsby-plugin-manifest`,
+   {
+    resolve: `gatsby-plugin-intl`,
+    options: {
+      // language JSON resource path
+      path: `${__dirname}/src/content`,
+      // supported language
+      languages: [`en`, `tr`],
+      // language file path
+      defaultLanguage: `tr`,
+      // option to redirect to `/ko` when connecting `/`
+      redirect: false,
+    },
+  },
    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
