@@ -1,11 +1,13 @@
 import React from "react"
-import Header from "../components/header"
+import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const Projects = () => (
    <>
-    <SEO title="Home" />
-    <Header />
+    <SEO title="Projects" />
+    <Layout>
+
+    </Layout>
    </>
 )
 
