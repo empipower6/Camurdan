@@ -242,6 +242,8 @@ header .logo{
 .about-people-section .people-text .tugba {
     width:45%;
     text-align:right;
+    margin-top:-10vw;
+
 }
 
 .about-people-section .people-text .tugba .tugbaBall{
@@ -252,6 +254,17 @@ header .logo{
     margin-top:-8vw;
     opacity:0.3;
 }
+
+.about-people-section .people-text .tugba .tugbaPic{
+    
+    width:25vw;
+    height:25vw;
+    margin-left:25vw;
+    padding-bottom:15vw;
+
+    
+}
+
 .about-people-section .people-text .tugba .bio{
 
    padding-left:40%;
@@ -269,7 +282,7 @@ header .logo{
 }
 
 .about-people-section .people-text .funda{
-    margin-top:-15%;
+    margin-top:-75%;
     float:right;
     width:42%;
 }
@@ -282,6 +295,15 @@ header .logo{
     margin-top:-6vw;
     margin-left:18vw;
     opacity:0.5;
+}
+
+.about-people-section .people-text .funda .fundaPic{
+    
+    width:27vw;
+    height:27vw;
+    padding-bottom:15vw;
+    margin-left:-6vw;
+    
 }
 
 .about-people-section .people-text .funda .bio{

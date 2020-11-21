@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.91",
     "gatsby-image": "^2.4.21",
     "gatsby-plugin-intl": "^0.3.3",
@@ -12,6 +13,7 @@
     "gatsby-plugin-offline": "^3.2.38",
     "gatsby-plugin-react-helmet": "^3.3.14",
     "gatsby-plugin-sharp": "^2.6.43",
+    "gatsby-source-contentful": "^4.0.0",
     "gatsby-source-filesystem": "^2.3.37",
     "gatsby-transformer-sharp": "^2.5.20",
     "gsap": "^3.5.1",
@@ -35,7 +37,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "dev":" gatsby clean && gatsby develop "
+    "dev": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby clean && gatsby develop "
   },
   "repository": {
     "type": "git",

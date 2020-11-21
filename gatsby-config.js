@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Camurdan Atolye`,
@@ -27,6 +31,14 @@ module.exports = {
       defaultLanguage: `tr`,
       // option to redirect to `/ko` when connecting `/`
       redirect: false,
+    },
+  },
+  {
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `3wctuktny9hg`,
+      // Learn about environment variables: https://gatsby.dev/env-vars
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     },
   },
    

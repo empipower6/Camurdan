@@ -12,7 +12,6 @@ const Header = ({image}) => {
   let language =intl.locale=="tr"?"en":"tr";
   
 
-
   return(
   <header>
     <div className="headerContent">
