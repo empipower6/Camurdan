@@ -1,7 +1,9 @@
+if(process.env.NODE_ENV == 'development'){
+
 require("dotenv").config({
   path: `.env`,
 })
-
+}
 module.exports = {
   siteMetadata: {
     title: `Camurdan Atolye`,
@@ -38,7 +40,7 @@ module.exports = {
     options: {
       spaceId: `3wctuktny9hg`,
       // Learn about environment variables: https://gatsby.dev/env-vars
-      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      accessToken: process.env.GATSBY_CONTENTFUL_ACCESS_TOKEN,
     },
   },
    

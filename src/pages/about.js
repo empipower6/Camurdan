@@ -38,7 +38,7 @@ const About = ({ data }) =>{
         });
    }, [])
 
-  
+   console.log(process.env.NODE_ENV)
    return(
    <>
       <SEO title="Home" />
