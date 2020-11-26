@@ -22,7 +22,7 @@ const Header = ({image}) => {
  
   <ul>
     <li><Link to="/products" activeClassName="active" className="menu-item">{intl.formatMessage({ id: "headerProduct" })}</Link></li>
-    <li><Link to="/projects" activeClassName="active" className="menu-item">{intl.formatMessage({ id: "headerProject" })}</Link></li>
+    <li><Link to="/workshop" activeClassName="active" className="menu-item">{intl.formatMessage({ id: "headerWorkshops" })}</Link></li>
     <li><Link to="/exhibitions" activeClassName="active" className="menu-item">{intl.formatMessage({ id: "headerExhibitions" })}</Link></li>
     <li><Link to="/about" activeClassName="active" className="menu-item">{intl.formatMessage({ id: "headerAbout" })}</Link></li>
     <li onClick= {()=>{changeLocale(language)}} className="languageSwitch"> {intl.locale=="tr"?"En":"Tr"}</li>

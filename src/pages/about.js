@@ -11,7 +11,6 @@ const About = ({ data }) =>{
 
    const intl =useIntl();
    gsap.registerPlugin(ScrollTrigger);
-   console.log(gsap);
 
    useEffect(() => { 
       gsap.from(".funda", {
@@ -29,7 +28,6 @@ const About = ({ data }) =>{
         scrollTrigger:{
            trigger:".tugba",
            scrub:1,
-           markers:true,
            start:"top bottom",
            end:"+=1000"
           },
@@ -38,7 +36,6 @@ const About = ({ data }) =>{
         });
    }, [])
 
-   console.log(process.env.NODE_ENV)
    return(
    <>
       <SEO title="Home" />
